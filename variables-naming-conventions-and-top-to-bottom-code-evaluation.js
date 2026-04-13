@@ -24,9 +24,24 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+// Old Code
+// let a = "Alice";
+// let b = 5;
+// let c = 20;
+// let d = a + " bought " + b + " items for $" + c + ".";
 
-console.log(d);
+// console.log(d);
+
+let shopperName = "Alice";
+let numItems = 5;
+let totalSpent = 20;
+let taxAmount = 1.25;
+let moneySaved = 5;
+let finalTotal = totalSpent + taxAmount;
+let purchaseSummary = shopperName + " bought " + numItems + " items for $" + totalSpent + ".";
+let finalCostMessage = "After tax, the final total was $" + finalTotal + ".";
+let savingsMessage = shopperName + " also saved $" + moneySaved + ".";
+
+console.log(purchaseSummary);
+console.log(finalCostMessage);
+console.log(savingsMessage);
